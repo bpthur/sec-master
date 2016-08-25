@@ -7,6 +7,9 @@ dependencies:
     - docker info
     - docker build -t bpthur/sec-master:1.0.0.$CIRCLE_BUILD_NUM .
 
+test:
+  override:
+
 deployment:
   hub:
     branch: master
