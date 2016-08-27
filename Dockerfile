@@ -1,7 +1,7 @@
 FROM node:argon-slim
 
 #Update and Upgrade
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 
 # Create app directory
 RUN mkdir -p /usr/src/app
