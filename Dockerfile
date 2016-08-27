@@ -1,4 +1,4 @@
-FROM node:argon-slim:latest
+FROM node:argon-slim
 
 #Update and Upgrade
 RUN apt-get update -y && apt-get upgrade -y
