@@ -6,6 +6,7 @@ dependencies:
   override:
     - docker info
     - docker build -t bpthur/sec-master:1.0.0.$CIRCLE_BUILD_NUM .
+    - docker tag bpthur/sec-master:1.0.0.$CIRCLE_BUILD_NUM bpthur/sec-master:latest
 
 test:
   override:
